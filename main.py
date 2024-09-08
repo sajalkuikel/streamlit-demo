@@ -25,7 +25,7 @@ if app_mode=='Home':
     st.title('Loan Prediction :')
     st.image('histo.png')
     st.markdown('Dataset :')
-    data=pd.read_csv('kalimati_2013_2024_rate_weather.csv')
+    data=pd.read_csv('data.csv')
     st.write(data.head())
     st.markdown('Applicant Income VS Loan Amount ')
     st.bar_chart(data[['Average','Temperature_10M']].head(20))
